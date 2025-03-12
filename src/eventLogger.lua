@@ -1,12 +1,4 @@
-local Config = {
-    EnableLogger = true,
-    maxStateBagPayload = 1500,
-    maxEventPayload = 4000,
-    maxLogStateBagPayload = 300,
-    ignoreEvents = {
-        '__cfx_internal:httpResponse'
-    }
-}
+local Config = require('shared.config')
 
 if not Config.EnableLogger then return end
 

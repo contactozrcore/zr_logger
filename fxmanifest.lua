@@ -7,6 +7,15 @@ name 'zr_logger'
 description 'System for FiveM Event and StateBag Logging.'
 version '1.0.0'
 
-server_script {
+shared_scripts {
+    '@ox_lib/init.lua',
+    'shared/config.lua'
+}
+
+server_scripts {
     'src/eventLogger.lua'
+}
+
+dependencies {
+    'ox_lib'
 }

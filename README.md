@@ -8,6 +8,7 @@ This script provides logging and monitoring capabilities for events and StateBag
 - Detects and warns about oversized event payloads.
 - Ignores specific predefined events to reduce unnecessary logging.
 - Checks the current FXServer artifact version for known issues.
+- **New documentation on how to use the script in the /shared/config.lua**
 
 ## Installation
 1. Download the script and place it inside your `resources` folder.
@@ -18,6 +19,8 @@ This script provides logging and monitoring capabilities for events and StateBag
    ```
 
 3. Restart your server or use the `refresh` and `ensure zr_logger` command in the server console.
+
+4. Now the use of ox_lib will be mandatory as a dependency, make sure to have it installed. [ox_lib](https://github.com/overextended/ox_lib)
 
 ## Configuration
 Modify the `Config` table in the script to adjust logging behavior:
