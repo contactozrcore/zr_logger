@@ -63,6 +63,8 @@ This script is provided "as is" without any warranty. You are free to modify and
 ## Credits
 Developed by Zeeroo.
 
+Credits for the API Key of Artifacts to: [Artifacts by JGScripts](https://artifacts.jgscripts.com/)
+
 ## Support
 For any issues or feature requests, please open an issue on this repository.
 
