@@ -12,9 +12,11 @@ This script provides logging and monitoring capabilities for events and StateBag
 ## Installation
 1. Download the script and place it inside your `resources` folder.
 2. Add the following line to your `server.cfg` file to ensure the script starts properly:
+
    ```plaintext
    ensure zr_logger
    ```
+   
 3. Restart your server or use the `refresh` and `ensure zr_logger` command in the server console.
 
 ## Configuration
