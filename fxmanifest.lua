@@ -2,6 +2,8 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
+node_version '22'
+
 author 'Author - @Zeeroo'
 name 'zr_logger'
 description 'System for FiveM Event and StateBag Logging.'
@@ -13,7 +15,8 @@ shared_scripts {
 }
 
 server_scripts {
-    'src/eventLogger.lua'
+    'src/eventLogger.lua',
+    'src/checkArtifactVersion.js'
 }
 
 dependencies {

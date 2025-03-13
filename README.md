@@ -7,7 +7,7 @@ This script provides logging and monitoring capabilities for events and StateBag
 - Logs changes to StateBags with size limits.
 - Detects and warns about oversized event payloads.
 - Ignores specific predefined events to reduce unnecessary logging.
-- Checks the current FXServer artifact version for known issues.
+- Checks the current FXServer artifact version for known issues (Node 22 - Javascript).
 - **New documentation on how to use the script in the /shared/config.lua**
 
 ## Installation
@@ -61,7 +61,7 @@ Modify the `Config` table in the script to adjust logging behavior:
 ```
 
 ## License
-This script is provided "as is" without any warranty. You are free to modify and distribute it as needed.
+This script is provided 'as is' without any warranty. You are free to modify and distribute it as needed.
 
 ## Credits
 Developed by Zeeroo.
@@ -70,4 +70,3 @@ Credits for the API Key of Artifacts to: [Artifacts by JGScripts](https://artifa
 
 ## Support
 For any issues or feature requests, please open an issue on this repository.
-

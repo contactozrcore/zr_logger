@@ -39,7 +39,7 @@ end)
 ---@param resource string: The name of the resource that is generating the event.
 ---@param eventName string: The name of the event being logged.
 ---@param eventData table: The data associated with the event.
----@param eventSource string: The source of the event (e.g., "Server", "Client").
+---@param eventSource string: The source of the event (e.g., 'Server', 'Client').
 ---@param eventPayload number: The size of the event data in bytes.
 AddEventHandler('consolelog', function(resource, eventName, eventData, eventSource, eventPayload)
     for _, v in pairs(Config.ignoreEvents) do
