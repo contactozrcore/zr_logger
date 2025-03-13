@@ -5,7 +5,7 @@ lua54 'yes'
 author 'Author - @Zeeroo'
 name 'zr_logger'
 description 'System for FiveM Event and StateBag Logging.'
-version '1.0.0'
+version '1.0.5'
 
 shared_scripts {
     '@ox_lib/init.lua',
