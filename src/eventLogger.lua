@@ -79,28 +79,3 @@ AddEventHandler('consolelog_client_latent', function(resource, playerId, eventNa
         print(string.format('^4[INFO] [S->C]^0 Latent Event Sniper: %s | Name: %s | Src: %s | Size: %dB | Bps: %d', resource, eventName, playerId, eventPayload, bps))
     end
 end)
-
----@param versionConvar string: The convar representing the current version of the FXServer.
----@param fxServerVersion string: The version of FXServer being used.
----@param code number: The HTTP status code returned from the external check.
----@param data string: The response data from the external check, usually JSON.
----@param errorData string: Error data if the request fails.
-local function checkArtifactVersion()
-    local versionConvar = GetConvar('version', 'Unknown')
-    local fxServerVersion = versionConvar:match('v%d+%.%d+%.%d+%.(%d+)')
-    PerformHttpRequest('https://artifacts.jgscripts.com/check?artifact=' .. (fxServerVersion or 'Unknown'), function (code, data, _, errorData)
-        if code ~= 200 or not data or errorData then
-            print('^4[INFO]^0 Could not check artifact version.')
-            return
-        end
-        local json = json.decode(data)
-        if json and json.status == 'BROKEN' then
-            print('^3[WARNING]^0 The FXServer version you are currently using has known issues.')
-        else
-            print('^4[INFO]^0 The FXServer version you are currently using is correct.')
-        end
-    end)
-end
-
----@param functionCall string: Call to `checkArtifactVersion()`, which checks the FXServer version.
-checkArtifactVersion()
