@@ -6,7 +6,7 @@ node_version '22'
 
 author 'Author - @Zeeroo'
 name 'zr_logger'
-description 'System for FiveM Event and StateBag Logging.'
+description 'System for FiveM Event and StateBag Logging (API Key of Artifacts by JGScripts).'
 version '1.0.5'
 
 shared_scripts {
